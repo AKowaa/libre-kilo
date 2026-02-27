@@ -1,10 +1,10 @@
-# Active Context: Next.js Starter Template
+# Active Context: Libre - Plataforma de Mobilidade
 
 ## Current State
 
-**Template Status**: ✅ Ready for development
+**Project Status**: ✅ Em Desenvolvimento
 
-The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. It's ready for AI-assisted expansion to build any type of application.
+A aplicação está sendo construída como uma plataforma de mobilidade para motoristas. O template inicial foi substituído pela estrutura da aplicação real.
 
 ## Recently Completed
 
@@ -14,29 +14,44 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 - [x] ESLint configuration
 - [x] Memory bank documentation
 - [x] Recipe system for common features
+- [x] Landing page removida
+- [x] Estrutura básica da aplicação criada
+- [x] Componentes UI básicos implementados
+- [x] Páginas: Home, Dashboard, Login, Cadastro
 
 ## Current Structure
 
-| File/Directory | Purpose | Status |
-|----------------|---------|--------|
-| `src/app/page.tsx` | Home page | ✅ Ready |
-| `src/app/layout.tsx` | Root layout | ✅ Ready |
-| `src/app/globals.css` | Global styles | ✅ Ready |
-| `.kilocode/` | AI context & recipes | ✅ Ready |
+| `src/app/page.tsx` | Home page | ✅ Pronto |
+| `src/app/dashboard/page.tsx` | Dashboard Motorista | ✅ Pronto |
+| `src/app/login/page.tsx` | Login | ✅ Pronto |
+| `src/app/cadastro/page.tsx` | Cadastro | ✅ Pronto |
+| `src/components/ui/Button.tsx` | Componente Botão | ✅ Pronto |
+| `src/components/ui/Card.tsx` | Componente Card | ✅ Pronto |
+| `src/components/ui/Input.tsx` | Componente Input | ✅ Pronto |
+| `.kilocode/` | AI context & recipes | ✅ Pronto |
 
 ## Current Focus
 
-The template is ready. Next steps depend on user requirements:
+A estrutura básica da aplicação está pronta. Próximos passos dependem das prioridades do usuário:
 
-1. What type of application to build
-2. What features are needed
-3. Design/branding preferences
+1. Implementar autenticação real
+2. Adicionar banco de dados
+3. Criar API de corridas
+4. Implementar sistema de ganhos
+5. Adicionar mais funcionalidades
 
 ## Quick Start Guide
 
-### To add a new page:
+### Páginas disponíveis:
 
-Create a file at `src/app/[route]/page.tsx`:
+- `/` - Página inicial
+- `/dashboard` - Dashboard do motorista
+- `/login` - Login de usuário
+- `/cadastro` - Cadastro de novo motorista
+
+### Para adicionar uma nova página:
+
+Crie um arquivo em `src/app/[rota]/page.tsx`:
 ```tsx
 export default function NewPage() {
   return <div>New page content</div>;
@@ -85,3 +100,6 @@ export async function GET() {
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
+| 27/02/2026 | Landing page removida, estrutura da aplicação criada |
+| 27/02/2026 | Componentes UI básicos implementados (Button, Card, Input) |
+| 27/02/2026 | Páginas criadas: Home, Dashboard, Login, Cadastro |
