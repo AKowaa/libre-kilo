@@ -13,8 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "Libre | Mobilidade que pertence a quem usa",
+  description: "Deixe de Ser a Rota. Seja o Dono do Mapa. Junte-se a nós como sócio-fundador e construa o futuro da mobilidade no Brasil.",
+  keywords: ["Uber", " rideshare", "motorista", "sócio", "investimento", "crowdfunding", "São Paulo", "mobilidade"],
+  authors: [{ name: "Libre S.A." }],
+  openGraph: {
+    title: "Libre | Mobilidade que pertence a quem usa",
+    description: "Deixe de Ser a Rota. Seja o Dono do Mapa.",
+    type: "website",
+    locale: "pt_BR",
+    siteName: "Libre",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
